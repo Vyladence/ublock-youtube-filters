@@ -1,3 +1,23 @@
+```
+! Block YouTube Shorts in recommendations
+www.youtube.com##ytd-rich-section-renderer:has(span:has-text(Shorts))
+www.youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
+www.youtube.com##ytd-reel-shelf-renderer
+
+! Block YouTube Gaming (mobile-style browser games) in recommendations
+www.youtube.com##ytd-rich-section-renderer:has(span:has-text(Playables))
+www.youtube.com##ytd-guide-entry-renderer:has-text(Playables)
+
+! Hide "Ask for videos any way you like" prompt
+www.youtube.com##ytd-talk-to-recs-flow-renderer:has-text(Ask for videos any way you like)
+
+! Hide AI video summary
+youtube.com##div#expandable-metadata
+
+! Hide "Ask" Gemini button under videos
+youtube.com##yt-button-view-model:has-text(Ask)
+```
+
 I also use the following to block the "Sign in with Google" prompts on sites like Reddit and Stack Exchange
 
 ```
